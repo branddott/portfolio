@@ -2,12 +2,14 @@
 
 :root{
  --primary-color:#010101;
- --secondary-color:#dd7109;
+ --secondary-color:#FFC022 ;
  --white:#fff;
+ --dark-green:#005E6F ;
  --para-color:#919191;
  --header-color:#141414;
  --gray-color:#9f9f9f;
  --font-family: "Inter", sans-serif;
+ --linear-gradient:linear-gradient(90deg,rgba(0, 94, 111, 1) 0%, rgba(0, 140, 131, 1) 75%);
 
 }
 *{
@@ -116,11 +118,14 @@ li{
 }
 .header-btn button{
     padding: 10px 40px;
-    background: var(--secondary-color);
+    background: var(--linear-gradient);
     border-radius: 5px;
     color: var(--white);
     border: none;
     font-weight: 600;
+}
+.navbar-brand img{
+    width: 200px;
 }
 /* ============================
 banner section start
@@ -204,7 +209,7 @@ banner section start
 }
 .sign{
     border: none;
-    background: var(--secondary-color);
+    background: var(--linear-gradient);
     padding: 10px 40px;
     margin-left: 5px;
     border-radius: 5px;
@@ -216,7 +221,7 @@ banner section start
     margin-bottom: 30px;
 }
 .sign i {
-    color: var(--secondary-color);
+    color: var(--white);
     padding-right: 10px;
     position: relative;
     z-index: 2;
@@ -373,7 +378,7 @@ banner section start
     vertical-align: middle;
 }
 .marque-wrap.style2 {
-    background: var(--secondary-color);
+    background: var(--linear-gradient);
 }
 .marque-wrap.style2 {
     padding: 10px 0;
@@ -428,7 +433,7 @@ banner section start
     height: calc(100% - 20px);
 }
 .feature-showcase-sec:hover{
-    background: var(--secondary-color);
+    background: var(--linear-gradient);
 }
 .feature-showcase-sec h6{
     color: var(--white);
@@ -453,7 +458,7 @@ banner section start
 }
 .footer-main-text button{
     padding: 10px 20px;
-    background: var(--secondary-color);
+    background: var(--linear-gradient);
     border: none;
     border-radius: 20px;
     color: var(--white);
@@ -543,7 +548,7 @@ banner section start
     right: 50px;
     display: flex;
     align-items: center;
-    background: var(--secondary-color);
+    background: var(--linear-gradient);
     border-radius: 20px;
     width: 265px;
     padding: 20px 28px;
@@ -578,9 +583,10 @@ banner section start
     z-index: 1;
 }
 .need-help-content h3 {
-    color: var(--primary-color);
+    color: var(--white);
     font-size: 22px;
     text-transform: capitalize;
+    font-weight: 700;
 }
 @keyframes  helpboxmove {
     50% {
@@ -600,7 +606,7 @@ banner section start
     font-weight: 700;
 }
 .secondary1{
-    color: var(--secondary-color);
+    color: var(--white);
 }
 .faq-accordion .accordion-item {
     position: relative;
@@ -696,7 +702,7 @@ banner section start
     position: relative;
     padding: 90px 90px 0px 90px;
     border-radius: 30px;
-    background: linear-gradient(180deg, var(--secondary-color) 0%, rgba(0, 0, 0, 0) 90.04%);
+    background: linear-gradient(180deg, #005E6F 0%, rgba(0, 0, 0, 0) 90.04%);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
 }
@@ -733,6 +739,9 @@ banner section start
 .feature-title-box .section-btn {
     width: calc(25% - 15px);
 }
+.btn-default:hover{
+    background: var(--linear-gradient);
+}
 .section-btn {
     text-align: right;
 }
@@ -750,7 +759,7 @@ banner section start
     border: none;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-in-out;
     position: relative;
     z-index: 1;
 }
@@ -783,6 +792,9 @@ banner section start
     opacity: 20%;
     width: 100%;
     height: 100%;
+}
+.btn-default:hover::before{
+    background-color: var(--dark-green);
 }
 .section-title h2{
     font-weight: 600;
@@ -820,7 +832,7 @@ banner section start
     transition: transform 0.3s ease;
  }
  .feature-list-item:hover{
-    background: var(--secondary-color);
+    background: var(--linear-gradient);
  }
  .feature-list-item:hover img{
     background-color: var(--white);
@@ -1041,7 +1053,7 @@ banner section start
 }
 .our-fact-content {
     width: 50%;
-    background-color: var(--white);
+    background: var(--linear-gradient);
     padding: 75px 50px;
 }
 .section-title h3 {
@@ -1070,7 +1082,7 @@ banner section start
 }
 .our-fact-body ul li {
     position: relative;
-    color: var(--primary-color);
+    color: var(--white);
     text-transform: capitalize;
     line-height: normal;
     padding-left: 30px;
@@ -1082,7 +1094,7 @@ banner section start
     position: absolute;
     font-size: 18px;
     font-weight: 400;
-    color: var(--primary-color);
+    color: var(--white);
     top: 2px;
     left: 0;
 }
@@ -1090,12 +1102,12 @@ banner section start
     margin-bottom: 0;
 }
 .our-fact-btn .btn-default {
-    background: var(--secondary-color) !important; 
-    color: var(--white);
+    background: var(--white) !important; 
+    color: var(--dark-green) !important;
 }
 .our-fact-btn .btn-default::before {
-    background-color: var(--secondary-color);
-    background-image: url(../img/arrow-primary.svg);
+    background-color: var(--white);
+    background-image: url(../img/service/arrow-dark.svg);
 }
 .fact-counter-list{
     width: 50%;
@@ -1123,7 +1135,7 @@ banner section start
     border-radius: 10px;
     color: var(--white);
     font-weight: 600;
-    background: var(--secondary-color);
+    background: var(--linear-gradient);
 }
 .form-head h3{
     color: var(--white);
@@ -1135,14 +1147,17 @@ banner section start
     text-transform: uppercase;
     padding-bottom: 10px;
     font-weight: 600;
+    color: var(--white);
 }
 .section-tittle h2{
     text-transform: capitalize;
     font-weight: 700;
     padding-bottom: 30px;
+    color: var(--white);
 }
 .section-tittle p{
     padding-bottom: 20px;
+    color: var(--white);
 }
 
 @media (max-width:768px) {
